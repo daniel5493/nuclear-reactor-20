@@ -1,5 +1,5 @@
-import viteLogo from '../../public/vite'
-import reactLogo from '../assets/react'
+
+import avatar from '../assets/avatar.png'
 function Projects() {
     
   
@@ -7,10 +7,10 @@ function Projects() {
       <>
         <div>
           <a href="" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
+            <img src={avatar} className="logo" alt="Vite logo" />
           </a>
           <a href="" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
+            <img src={avatar} className="logo react" alt="React logo" />
           </a>
         </div>
         
