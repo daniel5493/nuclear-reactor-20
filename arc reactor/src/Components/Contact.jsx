@@ -1,30 +1,22 @@
 function Contact() {
-    const [count, setCount] = useState(0)
-  
+    
+
     return (
-      <>
-        <div>
-          <a href="https://vitejs.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
-        </div>
-        <h1>Vite + React</h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
-        </p>
-      </>
+        <>
+            <div>
+                <form action="/">
+                    <label htmlFor="name">name:</label><br />
+                    <input type="text" id="name" name="name" defaultValue="name" /><br />
+                    <label htmlFor="email">email:</label><br />
+                    <input type="text" id="email" name="email" defaultValue="email" /><br />
+                    <label htmlFor="message">message:</label><br />
+                    <input type="text" id="message" name="message" defaultValue="message" /><br /><br />
+                    <input type="submit" defaultValue="Submit" />
+                </form>
+            </div>
+
+        </>
     )
-  }
-  
-  export default Contact
+}
+
+export default Contact
